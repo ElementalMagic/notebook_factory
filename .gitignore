@@ -38,6 +38,7 @@ jspm_packages/
 server/node_modules/
 client/node_modules/
 client/.idea/
+.idea/
 
 # TypeScript v1 declaration files
 typings/
