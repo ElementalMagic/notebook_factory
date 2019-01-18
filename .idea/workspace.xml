@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1c8fcc1-35e7-4699-bc9f-d47ba769ff4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/dist/notebookFactory/3rdpartylicenses.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/notebookFactory/assets/bulman.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/notebookFactory/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/notebookFactory/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/notebookFactory/main.a9e834d06a21f6a17567.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/notebookFactory/polyfills.20ab2d163684112c2aba.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/notebookFactory/runtime.ec2944dd8b20ec099bf3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/notebookFactory/styles.1bccd65a7ea56cadc691.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/bulman.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/notebookFactory.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/notebookFactory.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/order.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -353,12 +331,20 @@
       <workItem from="1547640512355" duration="1019000" />
       <workItem from="1547647809062" duration="8704000" />
       <workItem from="1547736820943" duration="7712000" />
-      <workItem from="1547823515745" duration="908000" />
+      <workItem from="1547823515745" duration="1153000" />
     </task>
+    <task id="LOCAL-00001" summary="Testing calc">
+      <created>1547824859203</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1547824859203</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29036000" />
+    <option name="totallyTimeSpent" value="29281000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -371,7 +357,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.50632244" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
