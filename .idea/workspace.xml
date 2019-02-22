@@ -1,52 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1c8fcc1-35e7-4699-bc9f-d47ba769ff4a" name="Default Changelist" comment="Testing calc">
+    <list default="true" id="e1c8fcc1-35e7-4699-bc9f-d47ba769ff4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/notebookFactory/3rdpartylicenses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/notebookFactory/assets/bulman.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/notebookFactory/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/notebookFactory/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/notebookFactory/main.a9e834d06a21f6a17567.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/notebookFactory/polyfills.20ab2d163684112c2aba.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/notebookFactory/runtime.ec2944dd8b20ec099bf3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/notebookFactory/styles.1bccd65a7ea56cadc691.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/e2e/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/e2e/src/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/e2e/src/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/e2e/tsconfig.e2e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/proxy.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/bulman.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/browserslist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/tslint.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/server/bin/www" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/order.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -63,14 +20,14 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="13" />
-          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -100,10 +57,10 @@
           <entry key="css" value="11" />
           <entry key="gitignore" value="29" />
           <entry key="html" value="415" />
-          <entry key="js" value="956" />
+          <entry key="js" value="996" />
           <entry key="json" value="57" />
           <entry key="ts" value="3458" />
-          <entry key="txt" value="16" />
+          <entry key="txt" value="50" />
           <entry key="www" value="3" />
         </counts>
       </usages-collector>
@@ -112,8 +69,8 @@
           <entry key="CSS" value="11" />
           <entry key="HTML" value="414" />
           <entry key="JSON" value="57" />
-          <entry key="JavaScript" value="960" />
-          <entry key="PLAIN_TEXT" value="45" />
+          <entry key="JavaScript" value="1000" />
+          <entry key="PLAIN_TEXT" value="79" />
           <entry key="TypeScript" value="3458" />
         </counts>
       </usages-collector>
@@ -127,11 +84,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/routes/order.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="53" />
+            <state relative-caret-position="510">
+              <caret line="57" column="30" lean-forward="true" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
               <folding>
                 <element signature="n#!!block;n#sendEmail#0" />
               </folding>
@@ -162,11 +119,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="106" selection-start-line="24" selection-start-column="106" selection-end-line="24" selection-end-column="106" />
+            <state relative-caret-position="425">
+              <caret line="25" column="99" lean-forward="true" selection-start-line="25" selection-start-column="99" selection-end-line="25" selection-end-column="99" />
             </state>
           </provider>
         </entry>
@@ -174,7 +131,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/node_modules/express/lib/response.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6817">
+            <state relative-caret-position="574">
               <caret line="406" column="17" selection-start-line="406" selection-start-column="17" selection-end-line="406" selection-end-column="17" />
             </state>
           </provider>
@@ -183,8 +140,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/bin/www">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="48" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="48" />
+            <state relative-caret-position="-595">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -232,8 +189,8 @@
         <option value="$PROJECT_DIR$/client/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/client/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/server/bin/www" />
-        <option value="$PROJECT_DIR$/server/app.js" />
         <option value="$PROJECT_DIR$/server/routes/order.js" />
+        <option value="$PROJECT_DIR$/server/app.js" />
       </list>
     </option>
   </component>
@@ -292,23 +249,6 @@
             <path>
               <item name="notebookFactory" type="b2602c69:ProjectViewProjectNode" />
               <item name="notebookFactory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="notebookFactory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="notebookFactory" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="notebookFactory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="notebookFactory" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="notebookFactory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="notebookFactory" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -406,6 +346,7 @@
       <workItem from="1550595429700" duration="36000" />
       <workItem from="1550605725852" duration="720000" />
       <workItem from="1550837778774" duration="1631000" />
+      <workItem from="1550871145657" duration="618000" />
     </task>
     <task id="LOCAL-00001" summary="Testing calc">
       <created>1547824859203</created>
@@ -421,11 +362,25 @@
       <option name="project" value="LOCAL" />
       <updated>1547825209890</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="preparing server">
+      <created>1550871179448</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1550871179448</updated>
+    </task>
+    <task id="LOCAL-00004" summary="config server">
+      <created>1550871617363</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1550871617363</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40910000" />
+    <option name="totallyTimeSpent" value="41528000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -438,8 +393,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24920969" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24920969" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -451,8 +407,8 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015806" side_tool="true" visible="true" weight="0.28602383" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49841937" visible="true" weight="0.28602383" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5021075" side_tool="true" visible="true" weight="0.28602383" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49789253" visible="true" weight="0.28602383" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.32827735" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -490,7 +446,9 @@
       <path value="$PROJECT_DIR$/client" />
     </ignored-roots>
     <MESSAGE value="Testing calc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing calc" />
+    <MESSAGE value="preparing server" />
+    <MESSAGE value="config server" />
+    <option name="LAST_COMMIT_MESSAGE" value="config server" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/server/views/index.html">
@@ -529,6 +487,16 @@
     <entry file="file://$PROJECT_DIR$/client/src/index.html" />
     <entry file="file://$PROJECT_DIR$/client/package.json" />
     <entry file="file://$PROJECT_DIR$/client/angular.json" />
+    <entry file="file://$PROJECT_DIR$/server/routes/order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="57" column="30" lean-forward="true" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+          <folding>
+            <element signature="n#!!block;n#sendEmail#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -548,32 +516,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/node_modules/express/lib/response.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6817">
+        <state relative-caret-position="574">
           <caret line="406" column="17" selection-start-line="406" selection-start-column="17" selection-end-line="406" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/bin/www">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="48" />
+        <state relative-caret-position="-595">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="106" selection-start-line="24" selection-start-column="106" selection-end-line="24" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="53" />
-          <folding>
-            <element signature="n#!!block;n#sendEmail#0" />
-          </folding>
+        <state relative-caret-position="425">
+          <caret line="25" column="99" lean-forward="true" selection-start-line="25" selection-start-column="99" selection-end-line="25" selection-end-column="99" />
         </state>
       </provider>
     </entry>
