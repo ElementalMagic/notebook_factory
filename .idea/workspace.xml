@@ -57,10 +57,10 @@
           <entry key="css" value="11" />
           <entry key="gitignore" value="29" />
           <entry key="html" value="415" />
-          <entry key="js" value="996" />
+          <entry key="js" value="1115" />
           <entry key="json" value="57" />
           <entry key="ts" value="3458" />
-          <entry key="txt" value="50" />
+          <entry key="txt" value="53" />
           <entry key="www" value="3" />
         </counts>
       </usages-collector>
@@ -69,8 +69,8 @@
           <entry key="CSS" value="11" />
           <entry key="HTML" value="414" />
           <entry key="JSON" value="57" />
-          <entry key="JavaScript" value="1000" />
-          <entry key="PLAIN_TEXT" value="79" />
+          <entry key="JavaScript" value="1119" />
+          <entry key="PLAIN_TEXT" value="82" />
           <entry key="TypeScript" value="3458" />
         </counts>
       </usages-collector>
@@ -122,8 +122,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="99" lean-forward="true" selection-start-line="25" selection-start-column="99" selection-end-line="25" selection-end-column="99" />
+            <state relative-caret-position="306">
+              <caret line="18" column="67" lean-forward="true" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -268,7 +268,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="ts.external.directory.path" value="D:\node.js project\notebookFactory\client\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
@@ -346,7 +346,7 @@
       <workItem from="1550595429700" duration="36000" />
       <workItem from="1550605725852" duration="720000" />
       <workItem from="1550837778774" duration="1631000" />
-      <workItem from="1550871145657" duration="618000" />
+      <workItem from="1550871145657" duration="1866000" />
     </task>
     <task id="LOCAL-00001" summary="Testing calc">
       <created>1547824859203</created>
@@ -376,11 +376,25 @@
       <option name="project" value="LOCAL" />
       <updated>1550871617363</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="config server">
+      <created>1550871776777</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1550871776777</updated>
+    </task>
+    <task id="LOCAL-00006" summary="config server">
+      <created>1550872612779</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1550872612779</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41528000" />
+    <option name="totallyTimeSpent" value="42776000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -530,8 +544,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="99" lean-forward="true" selection-start-line="25" selection-start-column="99" selection-end-line="25" selection-end-column="99" />
+        <state relative-caret-position="306">
+          <caret line="18" column="67" lean-forward="true" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
         </state>
       </provider>
     </entry>
