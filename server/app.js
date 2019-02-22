@@ -16,7 +16,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.resolve(__dirname+'../../client/fb')));
+app.use(express.static(path.resolve('../../client/fb')));
 //app.use(express.static(path.join('D:','node.js project','FB_PRODUCTION','fb')));
 //app.use(express.static('D:\\node.js project\\FB_PRODUCTION\\fb\\index.html'));
 
