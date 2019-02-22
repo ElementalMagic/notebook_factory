@@ -16,12 +16,12 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join('root', 'client','fb')));
+app.use(express.static(__dirname+'../../client/fb'));
 //app.use(express.static(path.join('D:','node.js project','FB_PRODUCTION','fb')));
 //app.use(express.static('D:\\node.js project\\FB_PRODUCTION\\fb\\index.html'));
 
 app.use('/api/order', orderRouter);
 app.use('/users', usersRouter);
 //app.use('*', (req,res) => res.status(400).sendFile('D:\\node.js project\\FB_PRODUCTION\\fb\\index.html'));
-app.use('*', (req,res) => res.status(400).sendFile(path.join('root', 'client','fb','index.html')));
+app.use('*', (req,res) => res.status(400).sendFile(__dirname+'../../client/fb/index.html'));
 module.exports = app;
