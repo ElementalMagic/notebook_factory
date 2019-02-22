@@ -24,5 +24,5 @@ app.use('/api/order', orderRouter);
 app.use('/users', usersRouter);
 //app.use('*', (req,res) => res.status(400).sendFile('D:\\node.js project\\FB_PRODUCTION\\fb\\index.html'));
 
-app.use('*', (req,res) => res.status(400).sendFile(path.resolve(__dirname+'../../client/fb/index.html')));
+app.use('*', (req,res) => res.status(400).sendFile(path.resolve('../../client/fb/index.html')));
 module.exports = app;
