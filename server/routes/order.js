@@ -50,21 +50,28 @@ function sendEmail(req1, res){
 function sendEmailPhone(req1, res){
     var transporter = nodemailer.createTransport({
         host: "smtp.yandex.ru",
-        port: 587,
-        secure: false,
+        port: 465,
+        secure: true,
+        // dkim:{
+        //     keySelector:'mail',
+        //     domainName: 'fabrikabloknotov.ru',
+        //     privateKey: 'v=DKIM1; k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDHBPAEu5qfJxymsxcgXg3Bu/JQkq3MRqB8c81VL3bnO/D/UfkWJwR9OE7lGrEnzka07Dl7SveWuJgii1qTYog65O9xAj/cWJ+vvJPo4Mn5PmqKFcvv+mLZciRlMqe8NwE8dbDvTWYekGAmzMT3rIwLH5ERJW90ZE9oeFIw3k8apQIDAQAB'
+        // },
         auth: {
-            user:'informer@fabrikabloknotov.ru',
-            pass: 'nhbnjy89'
+            user:'iqlex1',
+            pass: 've[jvjh'
         }
     });
 
-    let html = req1.body.html;
+    let html = '';
 
     var mailOptions = {
-        from: 'informer@fabrikabloknotov.ru',
+        from: '"Фабрика блокнотов" <iqlex1@yandex.ru>',
         to: 'vkstrfrt@gmail.com',
         subject: 'Заказ звонка с сайта ФабрикаБлокнотов',
-        html: html + '<div><h3>Заказ</h3> <h4> <span><b>Пользователь просит перезвонить ему.</b></span> </h4></div><br><br><br><br><br><div><h4><span><i>Это письмо было создано автоматически.</i></span><span><i>Не нужно отвечать на него.</i></span></h4></div>'
+        html: html + '<div><h3>Заказ</h3> <h4> <span><b>Пользователь просит перезвонить ему.</b></span> ' +
+            '</h4></div><br><br><br><br><br><div><h4><span><i>Это письмо было создано автоматически.</i>' +
+            '</span> <span><i>Не нужно отвечать на него.</i></span></h4></div>'
     };
 
     transporter.sendMail(mailOptions, function (error, info) {
