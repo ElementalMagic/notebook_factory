@@ -64,7 +64,7 @@ function sendEmailPhone(req1, res){
         from: 'informer@fabrikabloknotov.ru',
         to: 'vkstrfrt@gmail.com',
         subject: 'Заказ звонка с сайта ФабрикаБлокнотов',
-        html: html + '<div><h3>Заказ</h3> <h4> <span><b>Пользователь просит перезвонить ему.</b></span> </h4></div>'
+        html: html + '<div><h3>Заказ</h3> <h4> <span><b>Пользователь просит перезвонить ему.</b></span> </h4></div><br><br><br><br><br><div><h4><span><i>Это письмо было создано автоматически.</i></span><span><i>Не нужно отвечать на него.</i></span></h4></div>'
     };
 
     transporter.sendMail(mailOptions, function (error, info) {
