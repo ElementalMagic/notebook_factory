@@ -16,8 +16,6 @@ router.post('/:type', function (req, res, next) {
             sendEmailPhone(req.body, res);
         }
     }
-
-    res.json('Email send');
 });
 
 function sendEmail(req1, res){
