@@ -34,7 +34,6 @@ function sendEmail(req1, res){
         from: 'informer@fabrikabloknotov.ru',
         to: 'vkstrfrt@gmail.com',
         subject: 'Заказ расчета с сайта ФабрикаБлокнотов',
-        text: 'Новый заказ!',
         html: html
     };
 
@@ -65,8 +64,7 @@ function sendEmailPhone(req1, res){
         from: 'informer@fabrikabloknotov.ru',
         to: 'vkstrfrt@gmail.com',
         subject: 'Заказ звонка с сайта ФабрикаБлокнотов',
-        text: 'New Order!!',
-        html: html
+        html: html + '<div><h3>Заказ</h3> <h4> <span><b>Пользователь просит перезвонить ему.</b></span> </h4></div>'
     };
 
     transporter.sendMail(mailOptions, function (error, info) {
