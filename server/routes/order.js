@@ -21,7 +21,7 @@ router.post('/:type', function (req, res, next) {
 function sendEmail(req1, res){
     var transporter = nodemailer.createTransport({
         host: "smtp.yandex.ru",
-        port: 25,
+        port: 587,
         secure: false,
         auth: {
             user:'informer@fabrikabloknotov.ru',
@@ -51,7 +51,7 @@ function sendEmail(req1, res){
 function sendEmailPhone(req1, res){
     var transporter = nodemailer.createTransport({
         host: "smtp.yandex.ru",
-        port: 25,
+        port: 587,
         secure: false,
         auth: {
             user:'informer@fabrikabloknotov.ru',
@@ -59,7 +59,7 @@ function sendEmailPhone(req1, res){
         }
     });
 
-    let html = req1.body.html;
+    let html = '';
 
     var mailOptions = {
         from: 'informer@fabrikabloknotov.ru',
