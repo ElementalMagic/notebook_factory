@@ -30,7 +30,7 @@ function sendEmail(req1, res){
         // },
         auth: {
             user:'iqlex1',
-            pass: 've[jvjh'
+            pass: process.env.PASS
         }
     });
    let html = req1.body.html;
@@ -64,7 +64,7 @@ function sendEmailPhone(req1, res){
         // },
         auth: {
             user:'iqlex1',
-            pass: 've[jvjh'
+            pass: process.env.PASS
         }
     });
 
