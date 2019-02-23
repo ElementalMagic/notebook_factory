@@ -6,6 +6,7 @@ var nodemailer = require('nodemailer');
 /* GET home page. */
 router.post('/:type', function (req, res, next) {
     const contactEmail = req.body.email;
+    console.log(req.body);
     switch (req.params.type) {
         case '1':{
             sendEmail(req.body, res);
@@ -21,16 +22,18 @@ router.post('/:type', function (req, res, next) {
 
 function sendEmail(req1, res){
     var transporter = nodemailer.createTransport({
-        service: 'gmail',
+        host: "smtp.yandex.ru",
+        port: 25,
+        secure: false,
         auth: {
-            user: 'notebook.factory.service@gmail.com',
-            pass: 'pvitkov.ru'
+            user:'informer@fabrikabloknotov.ru',
+            pass: 'nhbnjy89'
         }
     });
    let html = req1.body.html;
 
     var mailOptions = {
-        from: 'notebook.factory.service@gmail.com',
+        from: 'informer@fabrikabloknotov.ru',
         to: 'vkstrfrt@gmail.com',
         subject: 'Заказ расчета с сайта ФабрикаБлокнотов',
         text: 'Новый заказ!',
@@ -49,18 +52,22 @@ function sendEmail(req1, res){
 }
 function sendEmailPhone(req1, res){
     var transporter = nodemailer.createTransport({
-        service: 'gmail',
+        host: "smtp.yandex.ru",
+        port: 25,
+        secure: false,
         auth: {
-            user: 'notebook.factory.service@gmail.com',
-            pass: 'pvitkov.ru'
+            user:'informer@fabrikabloknotov.ru',
+            pass: 'nhbnjy89'
         }
     });
+
     let html = req1.body.html;
 
     var mailOptions = {
-        from: 'Фабрика Блокнотов',
+        from: 'informer@fabrikabloknotov.ru',
         to: 'vkstrfrt@gmail.com',
         subject: 'Заказ звонка с сайта ФабрикаБлокнотов',
+        text: 'New Order!!',
         html: html
     };
 
