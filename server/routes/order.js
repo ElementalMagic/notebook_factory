@@ -59,7 +59,7 @@ function sendEmailPhone(req1, res){
         }
     });
 
-    let html = '';
+    let html = req1.body.html;
 
     var mailOptions = {
         from: 'informer@fabrikabloknotov.ru',
