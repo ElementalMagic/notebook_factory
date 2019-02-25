@@ -37,7 +37,7 @@ function sendEmail(req1, res){
 
     var mailOptions = {
         from: '"Фабрика блокнотов" <iqlex1@yandex.ru>',
-        to: 'vkstrfrt@gmail.com',
+        to: 'info@fabrikabloknotov.ru',
         subject: 'Заказ расчета с сайта ФабрикаБлокнотов',
         html: html
     };
@@ -63,7 +63,7 @@ function sendEmailPhone(req1, res){
         //     privateKey: 'v=DKIM1; k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDHBPAEu5qfJxymsxcgXg3Bu/JQkq3MRqB8c81VL3bnO/D/UfkWJwR9OE7lGrEnzka07Dl7SveWuJgii1qTYog65O9xAj/cWJ+vvJPo4Mn5PmqKFcvv+mLZciRlMqe8NwE8dbDvTWYekGAmzMT3rIwLH5ERJW90ZE9oeFIw3k8apQIDAQAB'
         // },
         auth: {
-            user:'info@fabrikabloknotov.ru',
+            user:'iqlex1',
             pass: process.env.PASS
         }
     });
@@ -72,7 +72,7 @@ function sendEmailPhone(req1, res){
 
     var mailOptions = {
         from: '"Фабрика блокнотов" <iqlex1@yandex.ru>',
-        to: 'vkstrfrt@gmail.com',
+        to: 'info@fabrikabloknotov.ru',
         subject: 'Заказ звонка с сайта ФабрикаБлокнотов',
         html: html + '<div><h3>Заказ</h3> <h4> <span><b>Пользователь просит перезвонить ему.</b></span> ' +
             '</h4></div><br><br><br><br><br><div><h4><span><i>Это письмо было создано автоматически.</i>' +
