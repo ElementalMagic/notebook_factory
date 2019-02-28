@@ -58,10 +58,10 @@
           <entry key="css" value="11" />
           <entry key="gitignore" value="29" />
           <entry key="html" value="415" />
-          <entry key="js" value="6206" />
+          <entry key="js" value="6226" />
           <entry key="json" value="60" />
           <entry key="ts" value="3458" />
-          <entry key="txt" value="161" />
+          <entry key="txt" value="217" />
           <entry key="www" value="3" />
         </counts>
       </usages-collector>
@@ -70,8 +70,8 @@
           <entry key="CSS" value="11" />
           <entry key="HTML" value="430" />
           <entry key="JSON" value="60" />
-          <entry key="JavaScript" value="6194" />
-          <entry key="PLAIN_TEXT" value="190" />
+          <entry key="JavaScript" value="6214" />
+          <entry key="PLAIN_TEXT" value="246" />
           <entry key="TypeScript" value="3458" />
         </counts>
       </usages-collector>
@@ -88,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1442">
-              <caret line="97" column="39" lean-forward="true" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
+            <state relative-caret-position="133">
+              <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -124,8 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/routes/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+            <state relative-caret-position="170">
+              <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -186,9 +186,9 @@
         <option value="$PROJECT_DIR$/server/package.json" />
         <option value="$PROJECT_DIR$/server/config/keys.js" />
         <option value="$PROJECT_DIR$/middleware/upload.js" />
-        <option value="$PROJECT_DIR$/server/routes/login.js" />
         <option value="$PROJECT_DIR$/server/models/Article.js" />
         <option value="$PROJECT_DIR$/server/routes/article.js" />
+        <option value="$PROJECT_DIR$/server/routes/login.js" />
         <option value="$PROJECT_DIR$/server/app.js" />
       </list>
     </option>
@@ -263,6 +263,12 @@
               <item name="notebookFactory" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notebookFactory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notebookFactory" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="notebookFactory" type="b2602c69:ProjectViewProjectNode" />
@@ -377,7 +383,7 @@
       <workItem from="1551296486785" duration="5923000" />
       <workItem from="1551338776920" duration="8247000" />
       <workItem from="1551383805525" duration="283000" />
-      <workItem from="1551384116084" duration="7064000" />
+      <workItem from="1551384116084" duration="8049000" />
     </task>
     <task id="LOCAL-00001" summary="Testing calc">
       <created>1547824859203</created>
@@ -533,11 +539,25 @@
       <option name="project" value="LOCAL" />
       <updated>1551393155831</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Версия для продакшана (статьи)">
+      <created>1551393765104</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1551393765104</updated>
+    </task>
+    <task id="LOCAL-00024" summary="...">
+      <created>1551394500893</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1551394500893</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87311000" />
+    <option name="totallyTimeSpent" value="88296000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -549,10 +569,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36406744" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21654373" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -565,7 +585,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50641024" side_tool="true" weight="0.285558" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49358973" visible="true" weight="0.28494042" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49358973" visible="true" weight="0.28494042" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.32827735" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -609,7 +629,9 @@
     <MESSAGE value="router config" />
     <MESSAGE value="change sendler email" />
     <MESSAGE value="Локальная версия (статьи и тд)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Локальная версия (статьи и тд)" />
+    <MESSAGE value="Версия для продакшана (статьи)" />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/server/views/index.html">
@@ -718,13 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/middleware/upload.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -746,10 +761,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1442">
-          <caret line="97" column="39" lean-forward="true" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
+        <state relative-caret-position="133">
+          <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
         </state>
       </provider>
     </entry>
