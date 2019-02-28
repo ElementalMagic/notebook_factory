@@ -8,7 +8,7 @@ router.post('/', function(req, res) {
     let answear;
     let rq = req.body;
     console.log(rq);
-    if(rq.password === 'loh'){
+    if(rq.password === 'thebroysneverdie'){
         answear = {
             success: true,
             key: key.secretKey,
