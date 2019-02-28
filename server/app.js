@@ -62,21 +62,20 @@ app.get('/contacts', (req,res) => {
     res.status(200).sendFile(path.resolve('../../client/fb/contacts.html'))
 });
 app.get('/news', (req,res) => {
-    res.status(200).sendFile(path.resolve('../../FB_PRODUCTION/fb/news.html'))
+    res.status(200).sendFile(path.resolve('../../client/fb/news.html'))
 });
 app.get('/article', (req,res,next) => {
-    res.status(200).sendFile(path.resolve('../../FB_PRODUCTION/fb/news-post.html'))
+    res.status(200).sendFile(path.resolve('../../client/fb/news-post.html'))
 });
 
-
 app.get('/login', (req,res) => {
-    res.status(200).sendFile(path.resolve('../../FB_PRODUCTION/fb/login.html'))
+    res.status(200).sendFile(path.resolve('../../client/fb/login.html'))
 });
 app.get('/editPage', function (req,res) {
     console.log(req.query);
 
     if(req.query.key === keys.secretKey){
-        res.status(200).sendFile(path.resolve('../../FB_PRODUCTION/fb/admin.html'));
+        res.status(200).sendFile(path.resolve('../../client/fb/admin.html'));
     } else {
         res.redirect('/login');
     }
@@ -89,9 +88,9 @@ app.get('*', function (req,res,next) {
         next();
     }
 });
-//app.use(express.static(path.resolve('../../client/fb')));
+app.use(express.static(path.resolve('../../client/fb')));
 app.use("/images", express.static("images"));
-app.use(express.static(path.join('D:','node.js project','FB_PRODUCTION','fb')));
+//app.use(express.static(path.join('D:','node.js project','FB_PRODUCTION','fb')));
 // app.use(express.static('D:\\node.js project\\FB_PRODUCTION\\fb\\index.html'));
 
 app.use('/api/order', orderRouter);
@@ -99,5 +98,5 @@ app.use('/api/login', loginRouter);
 app.use('/api/article', articleRouter);
 //app.use('*', (req,res) => res.status(400).sendFile('D:\\node.js project\\FB_PRODUCTION\\fb\\index.html'));
 
-//app.use('*', (req,res) => res.status(200).sendFile(path.resolve('../../client/fb/index.html')));
+app.use('*', (req,res) => res.status(200).sendFile(path.resolve('../../client/fb/index.html')));
 module.exports = app;

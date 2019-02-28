@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1c8fcc1-35e7-4699-bc9f-d47ba769ff4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/middleware/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/keys.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/models/Article.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/article.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -66,10 +58,10 @@
           <entry key="css" value="11" />
           <entry key="gitignore" value="29" />
           <entry key="html" value="415" />
-          <entry key="js" value="6201" />
+          <entry key="js" value="6206" />
           <entry key="json" value="60" />
           <entry key="ts" value="3458" />
-          <entry key="txt" value="125" />
+          <entry key="txt" value="161" />
           <entry key="www" value="3" />
         </counts>
       </usages-collector>
@@ -78,8 +70,8 @@
           <entry key="CSS" value="11" />
           <entry key="HTML" value="430" />
           <entry key="JSON" value="60" />
-          <entry key="JavaScript" value="6189" />
-          <entry key="PLAIN_TEXT" value="154" />
+          <entry key="JavaScript" value="6194" />
+          <entry key="PLAIN_TEXT" value="190" />
           <entry key="TypeScript" value="3458" />
         </counts>
       </usages-collector>
@@ -93,11 +85,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
+            <state relative-caret-position="1442">
+              <caret line="97" column="39" lean-forward="true" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -120,7 +112,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/routes/article.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="362">
@@ -195,9 +187,9 @@
         <option value="$PROJECT_DIR$/server/config/keys.js" />
         <option value="$PROJECT_DIR$/middleware/upload.js" />
         <option value="$PROJECT_DIR$/server/routes/login.js" />
-        <option value="$PROJECT_DIR$/server/app.js" />
         <option value="$PROJECT_DIR$/server/models/Article.js" />
         <option value="$PROJECT_DIR$/server/routes/article.js" />
+        <option value="$PROJECT_DIR$/server/app.js" />
       </list>
     </option>
   </component>
@@ -223,10 +215,11 @@
       <path value="$PROJECT_DIR$/server/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="682" />
+    <option name="y" value="-21" />
     <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="height" value="1034" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -384,7 +377,7 @@
       <workItem from="1551296486785" duration="5923000" />
       <workItem from="1551338776920" duration="8247000" />
       <workItem from="1551383805525" duration="283000" />
-      <workItem from="1551384116084" duration="6611000" />
+      <workItem from="1551384116084" duration="7064000" />
     </task>
     <task id="LOCAL-00001" summary="Testing calc">
       <created>1547824859203</created>
@@ -533,11 +526,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551085836744</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Локальная версия (статьи и тд)">
+      <created>1551393155831</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1551393155831</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86858000" />
+    <option name="totallyTimeSpent" value="87311000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -549,10 +549,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.67094016" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36406744" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -565,7 +565,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50641024" side_tool="true" weight="0.285558" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49358973" visible="true" weight="0.28774616" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49358973" visible="true" weight="0.28494042" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.32827735" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -608,7 +608,8 @@
     <MESSAGE value="config smtp server" />
     <MESSAGE value="router config" />
     <MESSAGE value="change sendler email" />
-    <option name="LAST_COMMIT_MESSAGE" value="change sendler email" />
+    <MESSAGE value="Локальная версия (статьи и тд)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Локальная версия (статьи и тд)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/server/views/index.html">
@@ -731,13 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/models/Article.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
@@ -749,6 +743,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
           <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1442">
+          <caret line="97" column="39" lean-forward="true" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
         </state>
       </provider>
     </entry>
