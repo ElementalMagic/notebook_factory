@@ -12,7 +12,8 @@ var path = require('path');
 var fs = require('fs');
 const options = {
     key: fs.readFileSync(path.resolve('key.key'),'utf-8'),
-    cert: fs.readFileSync(path.resolve('certificate.crt'), 'utf-8')
+    cert: fs.readFileSync(path.resolve('certificate.crt'), 'utf-8'),
+    ca: fs.readFileSync(path.resolve('certificate_ca.crt'), 'utf-8')
 };
 
 /**
@@ -27,7 +28,7 @@ var port = normalizePort(process.env.PORT || '8443');
  */
 
 var server = https.createServer(options, app).listen(8443);
-var server2 = http.createServer(app).listen(8080);
+var server2 = http.createServer(app).listen(80);
 
 /**
  * Listen on provided port, on all network interfaces.
