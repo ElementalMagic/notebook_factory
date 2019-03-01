@@ -28,7 +28,7 @@ app.get('*', function (req,res,next) {
     if(req.hostname === 'fabrikabloknotov.ru' || !process.env.CHECKDOMAIN){
         next();
     } else {
-        res.status(301).redirect('http://fabrikabloknotov.ru');
+        res.status(301).redirect('https://fabrikabloknotov.ru');
     }
 });
 app.get('/products', (req,res) => {
