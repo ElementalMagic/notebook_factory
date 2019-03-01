@@ -13,21 +13,21 @@ var fs = require('fs');
 const options = {
     key: fs.readFileSync(path.resolve('key.key'),'utf-8'),
     cert: fs.readFileSync(path.resolve('certificate.crt'), 'utf-8'),
-    ca: fs.readFileSync(path.resolve('certificate_ca.crt'), 'utf-8')
+    ca: [fs.readFileSync(path.resolve('certificate_ca.crt'), 'utf-8')]
 };
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '8443');
-//app.set('port', port);
+var port = normalizePort(process.env.PORT || '80');
+app.set('port', port);
 
 /**
  * Create HTTP server.
  */
 
-var server = https.createServer(options, app).listen(443);
+var server = https.createServer(options, app).listen(port);
 //var server2 = http.createServer(app).listen(80);
 
 /**
