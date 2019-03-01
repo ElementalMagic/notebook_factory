@@ -26,7 +26,7 @@ var port = normalizePort(process.env.PORT || '443');
 app.set('port', port);
 redirApp.set('port', normalizePort(80));
 redirApp.get('*', (req,res) => {
-   res.status(301).redirect('https://fabrikabloknotov.ru');
+   res.status(301).redirect('https://fabrikabloknotov.ru'+req.originalUrl);
 });
 /**
  * Create HTTP server.
