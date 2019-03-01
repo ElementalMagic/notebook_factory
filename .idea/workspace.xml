@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1c8fcc1-35e7-4699-bc9f-d47ba769ff4a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/server/bin/www" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -61,8 +61,8 @@
           <entry key="js" value="6400" />
           <entry key="json" value="60" />
           <entry key="ts" value="3458" />
-          <entry key="txt" value="265" />
-          <entry key="www" value="175" />
+          <entry key="txt" value="277" />
+          <entry key="www" value="276" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -70,8 +70,8 @@
           <entry key="CSS" value="11" />
           <entry key="HTML" value="430" />
           <entry key="JSON" value="60" />
-          <entry key="JavaScript" value="6560" />
-          <entry key="PLAIN_TEXT" value="294" />
+          <entry key="JavaScript" value="6661" />
+          <entry key="PLAIN_TEXT" value="306" />
           <entry key="TypeScript" value="3458" />
         </counts>
       </usages-collector>
@@ -97,8 +97,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/bin/www">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+            <state relative-caret-position="289">
+              <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -389,7 +389,7 @@
       <workItem from="1551338776920" duration="8247000" />
       <workItem from="1551383805525" duration="283000" />
       <workItem from="1551384116084" duration="8552000" />
-      <workItem from="1551435240363" duration="6796000" />
+      <workItem from="1551435240363" duration="8713000" />
     </task>
     <task id="LOCAL-00001" summary="Testing calc">
       <created>1547824859203</created>
@@ -573,11 +573,32 @@
       <option name="project" value="LOCAL" />
       <updated>1551440860308</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="New feature for uploading photos">
+      <created>1551452536248</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1551452536248</updated>
+    </task>
+    <task id="LOCAL-00028" summary="ssl setup">
+      <created>1551452664441</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1551452664441</updated>
+    </task>
+    <task id="LOCAL-00029" summary="ssl setup">
+      <created>1551453647807</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1551453647807</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95595000" />
+    <option name="totallyTimeSpent" value="97512000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -605,7 +626,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50641024" side_tool="true" weight="0.285558" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49358973" weight="0.28774616" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49358973" visible="true" weight="0.28774616" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.32827735" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -653,7 +674,8 @@
     <MESSAGE value="..." />
     <MESSAGE value="fixes" />
     <MESSAGE value="New feature for uploading photos" />
-    <option name="LAST_COMMIT_MESSAGE" value="New feature for uploading photos" />
+    <MESSAGE value="ssl setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="ssl setup" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/server/views/index.html">
@@ -792,8 +814,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/bin/www">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+        <state relative-caret-position="289">
+          <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
         </state>
       </provider>
     </entry>
