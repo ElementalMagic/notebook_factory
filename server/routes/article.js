@@ -14,6 +14,20 @@ function checkSign(req, res) {
     }
 }
 
+router.post('/uploadImage', upload.single('image'), async (req,res)=>{
+    try{
+        if(checkSign(req,res))
+        {
+            const rightPath = req.file.path;
+            const path = rightPath.replace('images\\', 'images/');
+            res.status(200).json(path);
+        }
+    } catch(e){
+        console.log(e);
+        res.status(400).json('Что-то пошло не так. Попробуйте позже.')
+    }
+});
+
 router.post('/firstArticle', upload.single('image'), async (req, res) => {
     if (checkSign(req, res)) {
         try {
