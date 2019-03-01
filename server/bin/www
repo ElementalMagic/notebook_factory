@@ -20,7 +20,7 @@ const options = {
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '80');
+var port = normalizePort(process.env.PORT || '443');
 app.set('port', port);
 
 /**
@@ -28,7 +28,7 @@ app.set('port', port);
  */
 
 var server = https.createServer(options, app).listen(port);
-//var server2 = http.createServer(app).listen(80);
+var server2 = http.createServer(app).listen(80);
 
 /**
  * Listen on provided port, on all network interfaces.
