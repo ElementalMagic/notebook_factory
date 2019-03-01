@@ -5,6 +5,8 @@
  */
 
 var app = require('../app');
+var express = require('express');
+var redirApp = express();
 var debug = require('debug')('server:server');
 var https = require('https');
 var http = require('http');
@@ -22,13 +24,16 @@ const options = {
 
 var port = normalizePort(process.env.PORT || '443');
 app.set('port', port);
-
+redirApp.set('port', normalizePort(80));
+redirApp.get('*', (req,res) => {
+   res.status(301).redirect('https://fabrikabloknotov.ru');
+});
 /**
  * Create HTTP server.
  */
 
 var server = https.createServer(options, app).listen(port);
-var server2 = http.createServer(app).listen(80);
+var server2 = http.createServer(redirApp).listen(80);
 
 /**
  * Listen on provided port, on all network interfaces.
