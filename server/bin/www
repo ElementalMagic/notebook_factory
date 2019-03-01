@@ -27,8 +27,8 @@ var port = normalizePort(process.env.PORT || '8443');
  * Create HTTP server.
  */
 
-var server = https.createServer(options, app).listen(8443);
-var server2 = http.createServer(app).listen(80);
+var server = https.createServer(options, app).listen(443);
+//var server2 = http.createServer(app).listen(80);
 
 /**
  * Listen on provided port, on all network interfaces.
