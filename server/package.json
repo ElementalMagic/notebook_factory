@@ -7,7 +7,7 @@
     "server": "nodemon index",
     "client": "npm run start --prefix ../client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "update": "cd ../../client/fb & git pull & cd ../../notebookFactory/server & git pull"
+    "update": "cd ../../client/fb & git pull & cd ../../notebook_factory/server & git pull"
   },
   "dependencies": {
     "compression": "^1.7.3",
