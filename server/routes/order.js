@@ -110,7 +110,7 @@ function sendCRMRequest(req, res) {
 
     var mailOptions = {
         from: '"Система ОРБИТА" <iqlex1@yandex.ru>',
-        to: 'vkstrfrt@gmail.com',
+        to: 'vk@zzpost.ru',
         subject: 'Заявка на подключение к системе ОРБИТА',
         html: html
     };
