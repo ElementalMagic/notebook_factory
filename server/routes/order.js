@@ -5,35 +5,28 @@ var nodemailer = require('nodemailer');
 
 /* GET home page. */
 router.post('/:type', function (req, res, next) {
-    const contactEmail = req.body.email;
-    console.log(req.body);
     switch (req.params.type) {
-        case '1':{
+        case '1': {
             sendEmail(req.body, res);
             break;
         }
-        case 'phone':{
+        case 'phone': {
             sendEmailPhone(req.body, res);
         }
     }
 });
 
-function sendEmail(req1, res){
+function sendEmail(req1, res) {
     var transporter = nodemailer.createTransport({
         host: "smtp.yandex.ru",
         port: 465,
         secure: true,
-        // dkim:{
-        //     keySelector:'mail',
-        //     domainName: 'fabrikabloknotov.ru',
-        //     privateKey: 'v=DKIM1; k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDHBPAEu5qfJxymsxcgXg3Bu/JQkq3MRqB8c81VL3bnO/D/UfkWJwR9OE7lGrEnzka07Dl7SveWuJgii1qTYog65O9xAj/cWJ+vvJPo4Mn5PmqKFcvv+mLZciRlMqe8NwE8dbDvTWYekGAmzMT3rIwLH5ERJW90ZE9oeFIw3k8apQIDAQAB'
-        // },
         auth: {
-            user:'iqlex1',
+            user: 'iqlex1',
             pass: process.env.PASS
         }
     });
-   let html = req1.body.html;
+    let html = req1.body.html;
 
     var mailOptions = {
         from: '"Фабрика блокнотов" <iqlex1@yandex.ru>',
@@ -52,18 +45,14 @@ function sendEmail(req1, res){
         }
     });
 }
-function sendEmailPhone(req1, res){
+
+function sendEmailPhone(req1, res) {
     var transporter = nodemailer.createTransport({
         host: "smtp.yandex.ru",
         port: 465,
         secure: true,
-        // dkim:{
-        //     keySelector:'mail',
-        //     domainName: 'fabrikabloknotov.ru',
-        //     privateKey: 'v=DKIM1; k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDHBPAEu5qfJxymsxcgXg3Bu/JQkq3MRqB8c81VL3bnO/D/UfkWJwR9OE7lGrEnzka07Dl7SveWuJgii1qTYog65O9xAj/cWJ+vvJPo4Mn5PmqKFcvv+mLZciRlMqe8NwE8dbDvTWYekGAmzMT3rIwLH5ERJW90ZE9oeFIw3k8apQIDAQAB'
-        // },
         auth: {
-            user:'iqlex1',
+            user: 'iqlex1',
             pass: process.env.PASS
         }
     });
@@ -89,5 +78,48 @@ function sendEmailPhone(req1, res){
         }
     });
 }
+
+router.post('/crm', function (req, res) {
+    var transporter = nodemailer.createTransport({
+        host: "smtp.yandex.ru",
+        port: 465,
+        secure: true,
+        auth: {
+            user: 'iqlex1',
+            pass: process.env.PASS
+        }
+    });
+
+    let html = `<div class="response">
+                <h1>Заявка на подключение к системе ОРБИТА</h1>
+                <h3>Имя:</h3>
+                <p>${req.body.name} ${req.body.surname}</p>
+                <h3>Телефон:</h3>
+                <p>${req.body.phone}</p>
+                <h3>Почта</h3>
+                <p>${req.body.email}</p>
+                <h3>Организация:</h3>
+                <p>${req.body.company}</p>
+                <h3>ИНН:</h3>
+                <p>${req.body.inn}</p>
+                </div>`;
+
+    var mailOptions = {
+        from: '"Система ОРБИТА" <iqlex1@yandex.ru>',
+        to: 'vk@zzpost.ru',
+        subject: 'Заявка на подключение к системе ОРБИТА',
+        html: html
+    };
+
+    transporter.sendMail(mailOptions, function (error, info) {
+        if (error) {
+            console.log(error);
+            res.status(400).json(error);
+        } else {
+            console.log('Email sent: ' + info.response);
+            res.status(200).json('Email sent');
+        }
+    });
+});
 
 module.exports = router;
