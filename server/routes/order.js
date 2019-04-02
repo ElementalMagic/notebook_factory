@@ -4,6 +4,7 @@ var path = require('path');
 var nodemailer = require('nodemailer');
 
 /* GET home page. */
+
 router.post('/:type', function (req, res, next) {
     switch (req.params.type) {
         case '1': {
@@ -12,6 +13,9 @@ router.post('/:type', function (req, res, next) {
         }
         case 'phone': {
             sendEmailPhone(req.body, res);
+        }
+        case 'crm': {
+            sendCRMRequest(req, res);
         }
     }
 });
@@ -79,7 +83,7 @@ function sendEmailPhone(req1, res) {
     });
 }
 
-router.post('/crm', function (req, res) {
+function sendCRMRequest(req, res) {
     var transporter = nodemailer.createTransport({
         host: "smtp.yandex.ru",
         port: 465,
@@ -106,7 +110,7 @@ router.post('/crm', function (req, res) {
 
     var mailOptions = {
         from: '"Система ОРБИТА" <iqlex1@yandex.ru>',
-        to: 'vk@zzpost.ru',
+        to: 'vkstrfrt@gmail.com',
         subject: 'Заявка на подключение к системе ОРБИТА',
         html: html
     };
@@ -120,6 +124,6 @@ router.post('/crm', function (req, res) {
             res.status(200).json('Email sent');
         }
     });
-});
+}
 
 module.exports = router;

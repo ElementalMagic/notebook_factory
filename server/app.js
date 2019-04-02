@@ -31,6 +31,9 @@ app.get('*', function (req,res,next) {
         res.status(301).redirect('https://fabrikabloknotov.ru');
     }
 });
+app.get('/orbit', (req,res) => {
+    res.status(200).sendFile(path.resolve('../../client/fb/form.html'))
+});
 app.get('/products', (req,res) => {
    res.status(200).sendFile(path.resolve('../../client/fb/products.html'))
 });
