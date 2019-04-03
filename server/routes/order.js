@@ -124,6 +124,23 @@ function sendCRMRequest(req, res) {
             res.status(200).json('Email sent');
         }
     });
+
+    let secondaryMailOptions = {
+        from: '"Система ОРБИТА" <iqlex1@yandex.ru>',
+        to: 'moleand@yandex.ru',
+        subject: 'Заявка на подключение к системе ОРБИТА',
+        html: html
+    }
+
+    transporter.sendMail(secondaryMailOptions, function (error, info) {
+        if (error) {
+            console.log(error);
+            res.status(400).json(error);
+        } else {
+            console.log('Email sent: ' + info.response);
+            res.status(200).json('Email sent');
+        }
+    });
 }
 
 module.exports = router;
