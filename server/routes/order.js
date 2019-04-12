@@ -175,7 +175,7 @@ function sendFeedback(req, res) {
 
     var mailOptions = {
         from: '"ФабрикаБлокнотов" <iqlex1@yandex.ru>',
-        to: 'vk@zzpost.ru',
+        to: 'info@fabrikabloknotov.ru',
         subject: 'Заявка на расчет тиража',
         html: html
     };
