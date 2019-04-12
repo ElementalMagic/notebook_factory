@@ -84,6 +84,20 @@ app.get('/editPage', function (req,res) {
     }
 });
 
+app.get('/nav.html', (req,res) =>{
+    res.status(200).sendFile(path.resolve('../../client/fb/nav.html'))
+});
+
+app.get('/footer.html', (req,res) =>{
+    res.status(200).sendFile(path.resolve('../../client/fb/footer.html'))
+
+});
+
+app.get('/product-container.html', (req,res) =>{
+    res.status(200).sendFile(path.resolve('../../client/fb/product-container.html'))
+});
+
+
 app.get('*', function (req,res,next) {
     if(req.path.endsWith('.html')){
         res.sendFile(path.resolve('../../client/fb/NotFound.html'))
@@ -93,13 +107,10 @@ app.get('*', function (req,res,next) {
 });
 app.use(express.static(path.resolve('../../client/fb')));
 app.use("/images", express.static("images"));
-//app.use(express.static(path.join('D:','node.js project','FB_PRODUCTION','fb')));
-// app.use(express.static('D:\\node.js project\\FB_PRODUCTION\\fb\\index.html'));
 
 app.use('/api/order', orderRouter);
 app.use('/api/login', loginRouter);
 app.use('/api/article', articleRouter);
-//app.use('*', (req,res) => res.status(400).sendFile('D:\\node.js project\\FB_PRODUCTION\\fb\\index.html'));
 
 app.use('*', (req,res) => res.status(200).sendFile(path.resolve('../../client/fb/index.html')));
 module.exports = app;

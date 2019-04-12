@@ -2,10 +2,12 @@ var express = require('express');
 var router = express.Router();
 var path = require('path');
 var nodemailer = require('nodemailer');
+let multer = require('multer');
+let upload = multer({storage: multer.memoryStorage()});
 
 /* GET home page. */
 
-router.post('/:type', function (req, res, next) {
+router.post('/:type', upload.single('model'), function (req, res, next) {
     switch (req.params.type) {
         case '1': {
             sendEmail(req.body, res);
@@ -16,6 +18,9 @@ router.post('/:type', function (req, res, next) {
         }
         case 'crm': {
             sendCRMRequest(req, res);
+        }
+        case 'noteFeedback': {
+            sendFeedback(req, res);
         }
     }
 });
@@ -133,6 +138,57 @@ function sendCRMRequest(req, res) {
     }
 
     transporter.sendMail(secondaryMailOptions, function (error, info) {
+        if (error) {
+            console.log(error);
+            res.status(400).json(error);
+        } else {
+            console.log('Email sent: ' + info.response);
+            res.status(200).json('Email sent');
+        }
+    });
+}
+
+function sendFeedback(req, res) {
+    var transporter = nodemailer.createTransport({
+        host: "smtp.yandex.ru",
+        port: 465,
+        secure: true,
+        auth: {
+            user: 'iqlex1',
+            pass: process.env.PASS
+        }
+    });
+
+    let html = `<div class="response">
+                <h1>Заявка на расчет тиража</h1>
+                <h3>Имя:</h3>
+                <p>${req.body.name}</p>
+                <h3>Телефон:</h3>
+                <p>${req.body.phone}</p>
+                <h3>Почта:</h3>
+                <p>${req.body.email}</p>
+                <h3>Дополнительная информация:</h3>
+                <p>${req.body.options}</p>
+                ${req.file ? '<h3>Макет:</h3>' +
+        '<p>Прикреплен к письму</p>' : ''}
+                </div>`;
+
+    var mailOptions = {
+        from: '"ФабрикаБлокнотов" <iqlex1@yandex.ru>',
+        to: 'vk@zzpost.ru',
+        subject: 'Заявка на расчет тиража',
+        html: html
+    };
+    if (req.file) {
+        mailOptions.attachments = [
+            {
+                filename: "Макет - " + req.file.originalname,
+                content: req.file.buffer
+            }
+        ]
+    }
+
+    transporter.sendMail(mailOptions, function (error, info) {
         if (error) {
             console.log(error);
             res.status(400).json(error);
