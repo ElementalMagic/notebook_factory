@@ -3,6 +3,7 @@ var router = express.Router();
 var keys = require('../config/keys');
 var upload = require('../../middleware/upload');
 var Article = require('../models/Article');
+var Draft = require('../models/Draft');
 var moment = require('moment');
 
 function checkSign(req, res) {
@@ -190,6 +191,106 @@ router.patch('/edit', upload.single('image'), async (req, res) => {
     } catch (e) {
         console.log(e.message);
         res.status(400).json('Что-то пошло не так. Попробуйте позже.');
+    }
+});
+
+router.get('/drafts', async (req, res) => {
+    try {
+        let articles = await Draft.find({}).sort({draftNumber: -1});
+        res.status(200).json(articles);
+    } catch (e) {
+        console.log(e.message);
+        res.status(400).json('Что-то пошло не так. Попробуйте позже.')
+    }
+});
+
+router.post('/save-draft', upload.single('image'), async (req, res) => {
+    try {
+        if (checkSign(req, res)) {
+            if (req.body.draftNumber == undefined) {
+                let lastNumber = 0;
+                let lastArcticle = await Draft
+                    .findOne({})
+                    .sort({draftNumber: -1});
+                let articles = await Draft.find({});
+                if (articles.length < 1) {
+                    lastNumber = 1;
+                } else {
+                    if (lastArcticle.draftNumber) {
+                        lastNumber = lastArcticle.draftNumber + 1;
+                    }
+                }
+                moment.locale('ru');
+                let rightPath, path;
+                if (req.file) {
+                    rightPath = req.file.path;
+                    path = rightPath.replace('images\\', 'images/');
+                }
+                let article = req.body;
+                const candidate = new Draft({
+                    name: article.name,
+                    htmlCode: article.htmlCode,
+                    category: article.category,
+                    draftNumber: lastNumber,
+                    image: req.file ? path : '',
+                    date: moment().format('LL'),
+                    title: req.body.title
+                });
+                await candidate.save();
+                res.status(200).json(candidate);
+            } else {
+                let updated = {
+                    name: req.body.name,
+                    htmlCode: req.body.htmlCode,
+                    category: req.body.category,
+                    draftNumber: req.body.draftNumber,
+                    title: req.body.title
+                };
+
+                if (req.file) {
+                    const rightPath = req.file.path;
+                    const path = rightPath.replace('images\\', 'images/');
+                    updated.image = path;
+                }
+
+                await Draft.findOneAndUpdate(
+                    {
+                        draftNumber: req.body.draftNumber
+                    },
+                    {
+                        $set: updated
+                    },
+                    {new: true});
+                res.status(200).json(updated);
+            }
+        }
+    } catch (e) {
+        console.log(e.message);
+        res.status(400).json('Что-то пошло не так. Попробуйте позже.')
+    }
+});
+
+router.post('/draft-number', async (req, res) => {
+    try {
+        let articles = await Draft
+            .findOne({draftNumber: req.body.draftNumber});
+        await Article.findOneAndUpdate({draftNumber: req.body.draftNumber}, {$set: {clicks: articles.clicks + 1}});
+        res.status(200).json(articles);
+    } catch (e) {
+        console.log(e.message);
+        res.status(400).json('Что-то пошло не так. Попробуйте позже.')
+    }
+});
+
+router.delete('/draft', async (req, res) => {
+    if (checkSign(req, res)) {
+        try {
+            await Draft.findOneAndDelete({draftNumber: req.body.draftNumber}, (err) => console.log(err));
+            res.status(200).json('Deleted');
+        } catch (e) {
+            console.log(e.message);
+            res.status(400).json('Что-то пошло не так. Попробуйте позже.')
+        }
     }
 });
 
