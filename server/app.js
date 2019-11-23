@@ -40,6 +40,9 @@ app.get('/products', (req,res) => {
 app.get('/bloknot-na-pruzhine', (req,res) => {
    res.status(200).sendFile(path.resolve('../../client/fb/bloknot-na-pruzhine.html'))
 });
+app.get('/kalendari', (req,res) => {
+    res.status(200).sendFile(path.resolve('../../client/fb/kalendari.html'))
+});
 app.get('/bloknot-na-kleyu', (req,res) => {
     res.status(200).sendFile(path.resolve('../../client/fb/bloknot-na-kleyu.html'))
 });
