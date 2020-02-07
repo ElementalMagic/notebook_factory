@@ -9,6 +9,7 @@ var orderRouter = require('./routes/order');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/login');
 var articleRouter = require('./routes/article');
+var portfolioRouter = require('./routes/zzpostPortfolio');
 var multer = require('multer');
 var keys = require('./config/keys.js');
 var app = express();
@@ -114,6 +115,7 @@ app.use("/images", express.static("images"));
 app.use('/api/order', orderRouter);
 app.use('/api/login', loginRouter);
 app.use('/api/article', articleRouter);
+app.use('/api/portfolio', portfolioRouter);
 
 app.use('*', (req,res) => res.status(200).sendFile(path.resolve('../../client/fb/index.html')));
 module.exports = app;
