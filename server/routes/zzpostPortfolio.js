@@ -28,7 +28,7 @@ router.post('/newWork', upload.single('image'), async (req, res) => {
                 tags: article.tags,
                 portfolioNumber: article.portfolioNumber,
                 image: req.file ? path : '',
-                date: moment().format('LL'),
+                date: moment().format('DD.MM.YYYY')
             });
             await candidate.save();
             res.status(200).json(`Портфолио добавлено`);
@@ -111,17 +111,7 @@ router.get('/all', async (req, res) => {
     }
 });
 
-router.get('/category', async (req, res) => {
-    try {
-        let articles = await Article
-            .find({category: req.body.category})
-            .sort({number: -1});
-        res.status(200).json(articles);
-    } catch (e) {
-        console.log(e.message);
-        res.status(400).json('Что-то пошло не так. Попробуйте позже.')
-    }
-});
+
 
 /*router.post('/number', async (req, res) => {
     try {
