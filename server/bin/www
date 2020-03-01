@@ -13,9 +13,9 @@ var http = require('http');
 var path = require('path');
 var fs = require('fs');
 const options = {
-    key: fs.readFileSync(path.resolve('key.key'),'utf-8'),
-    cert: fs.readFileSync(path.resolve('certificate.crt'), 'utf-8'),
-    ca: [fs.readFileSync(path.resolve('certificate_ca.crt'), 'utf-8')]
+    key: fs.readFileSync(path.resolve('../../../../etc/letsencrypt/live/fabrikabloknotov.ru/privkey.pem'), 'utf-8'),
+    cert: fs.readFileSync(path.resolve('../../../../etc/letsencrypt/live/fabrikabloknotov.ru/cert.pem'), 'utf-8'),
+    ca: [fs.readFileSync(path.resolve('../../../../etc/letsencrypt/live/fabrikabloknotov.ru/chain.pem'), 'utf-8')]
 };
 
 /**
