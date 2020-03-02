@@ -75,10 +75,10 @@ router.post('/newWork', upload.single('image'), async (req, res) => {
             res.status(400).json('Что-то пошло не так. Попробуйте позже.')
         }
     }
-});
+});*/
 
 router.delete('/all', upload.single('image'), async (req, res) => {
-    if (checkSign(req, res)) {
+    if (req.body.key === keys.secretKey) {
         try {
             await Article.deleteMany({}, (err) => console.log(err));
             res.status(200).json('Deleted');
@@ -92,14 +92,14 @@ router.delete('/all', upload.single('image'), async (req, res) => {
 router.delete('/deleteOne', upload.single('image'), async (req, res) => {
     if (checkSign(req, res)) {
         try {
-            await Article.findOneAndDelete({number: req.body.number}, (err) => console.log(err));
+            await Article.findOneAndDelete({portfolioNumber: req.body.portfolioNumber}, (err) => console.log(err));
             res.status(200).json('Deleted');
         } catch (e) {
             console.log(e.message);
             res.status(400).json('Что-то пошло не так. Попробуйте позже.')
         }
     }
-});*/
+})
 
 router.get('/all', async (req, res) => {
     try {
