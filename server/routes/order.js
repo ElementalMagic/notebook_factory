@@ -113,6 +113,7 @@ function sendCRMRequest(req, res) {
                 <p>${req.body.inn}</p>
                 </div>`;
 
+    let mailRecipients = ['', '']
     var mailOptions = {
         from: '"Система ОРБИТА" <iqlex1@yandex.ru>',
         to: 'vk@zzpost.ru',
@@ -132,7 +133,7 @@ function sendCRMRequest(req, res) {
 
     let secondaryMailOptions = {
         from: '"Система ОРБИТА" <iqlex1@yandex.ru>',
-        to: 'moleand@yandex.ru',
+        to: 'miss.gnom@gmail.com',
         subject: 'Заявка на подключение к системе ОРБИТА',
         html: html
     }
