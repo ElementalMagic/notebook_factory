@@ -59,6 +59,9 @@ app.get('/kubariki-s-logotipom', (req,res) => {
 app.get('/bloknot-s-magnitom', (req,res) => {
     res.status(200).sendFile(path.resolve('../../client/fb/bloknot-s-magnitom.html'))
 });
+app.get('/bloknot-na-skrepke', (req,res) => {
+    res.status(200).sendFile(path.resolve('../../client/fb/bloknot-na-skrepke.html'))
+});
 app.get('/trebovanya', (req,res) => {
     res.status(200).sendFile(path.resolve('../../client/fb/trebovanya.html'))
 });
